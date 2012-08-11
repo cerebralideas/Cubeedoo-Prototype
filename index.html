@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cubeedoo.me</title>
+	<link rel="stylesheet" href="css/cubeedoo.css">
+</head>
+<body>
+	<div id="viewport">
+		<div id="slide-container">
+			<article>
+				<h1 class="icon-cube"> Cubeedoo</h1>
+				<section id="login-form">
+					<form>
+						<label for="email">Email</label>
+						<input id="email" type="text" value=""/>
+						<label for="password">Password</label>
+						<input id="password" type="text" value=""/>
+						<input type="button" class="btn success" id="login" data-action="options-screen" value="Log In" />
+						<!-- Need to add "Create Account" button here -->
+					</form>
+				</section>
+			</article>
+			<article>
+				<header>
+					<a class="btn back-button" id="logout"  data-action="login-screen">Logout</a>
+					<h1>Cubeedoo</h1>
+					<a class="btn">Account</a>
+				</header>
+				<section id="options">
+					<ul>
+						<li class="btn">Matching Type: <span id="type">Shapes</span></li>
+						<li class="btn">Level: <span id="level">1</span></li>
+						<li class="btn">Audio: <span id="audio">Normal</span></li>
+					</ul>
+					<a class="btn success" id="play" data-action="play-screen">Play Game!</a>
+				</section>
+			</article>
+			<article>
+				<header>
+					<a class="btn back-button" id="game-options" data-action="options-screen">Back</a>
+					<h1>Level : 1</h1>
+					<a class="btn icon-play" id="game-clock" data-state="start">Start</a>
+				</header>
+				<section id="card-table">
+					<ul id="card-list">
+					</ul>
+				</section>
+			</article>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/cubeedoo.js"></script>
+</body>
+</html>

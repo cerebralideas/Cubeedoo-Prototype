@@ -1,0 +1,138 @@
+@font-face {
+	font-family: 'IcoMoon';
+	src: url('fonts/IcoMoon.eot');
+	src: url('fonts/IcoMoon.eot') format('embedded-opentype'),
+		url('fonts/IcoMoon.svg#IcoMoon') format('svg'),
+		url('fonts/IcoMoon.woff') format('woff'),
+		url('fonts/IcoMoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'IcoMoon';
+	content: attr(data-icon);
+	speak: none;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'IcoMoon';
+	font-style: normal;
+	speak: none;
+}
+.icon-spades:before {
+	content: "\73";
+}
+.icon-clubs:before {
+	content: "\63";
+}
+.icon-diamonds:before {
+	content: "\64";
+}
+.icon-heart:before {
+	content: "\68";
+}
+.icon-support:before {
+	content: "\6c";
+}
+.icon-home:before {
+	content: "\48";
+}
+.icon-pencil:before {
+	content: "\65";
+}
+.icon-compass:before {
+	content: "\43";
+}
+.icon-location:before {
+	content: "\29";
+}
+.icon-mobile:before {
+	content: "\49";
+}
+.icon-screen:before {
+	content: "\50";
+}
+.icon-tablet:before {
+	content: "\54";
+}
+.icon-equalizer:before {
+	content: "\53";
+}
+.icon-loading:before {
+	content: "\4c";
+}
+.icon-grid-view:before {
+	content: "\67";
+}
+.icon-trophy:before {
+	content: "\61";
+}
+.icon-arrow-down:before {
+	content: "\31";
+}
+.icon-arrow-right:before {
+	content: "\32";
+}
+.icon-arrow-up:before {
+	content: "\33";
+}
+.icon-arrow-left:before {
+	content: "\34";
+}
+.icon-twitter:before {
+	content: "\74";
+}
+.icon-info:before {
+	content: "\69";
+}
+.icon-star:before {
+	content: "\2a";
+}
+.icon-star-2:before {
+	content: "\6f";
+}
+.icon-download:before {
+	content: "\44";
+}
+.icon-droplet:before {
+	content: "\70";
+}
+.icon-cancel:before {
+	content: "\78";
+}
+.icon-checkmark:before {
+	content: "\79";
+}
+.icon-clipboard:before {
+	content: "\3d";
+}
+.icon-seven-segment:before {
+	content: "\38";
+}
+.icon-safari:before {
+	content: "\21";
+}
+.icon-bicycle:before {
+	content: "\4f";
+}
+.icon-cube:before {
+	content: "\62";
+}
+.icon-github:before {
+	content: "\47";
+}
+.icon-clock:before {
+	content: "\27";
+}
+.icon-play:before {
+	content: "\22";
+}
+.icon-pause:before {
+	content: "\23";
+}
+.icon-stop:before {
+	content: "\24";
+}

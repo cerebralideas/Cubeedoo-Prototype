@@ -1,0 +1,323 @@
+/***************************************\
+* Minimal Design Style by Justin Lowery *
+\***************************************/
+
+@import url('reset.css');
+@import url('http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic');
+@import url('../fonts/icomoon/style.css');
+
+/* Layout Styles */
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font: 400 1em/1.2em 'Asap', sans-serif;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+	background: #fff url('/img/100-90-5.png');
+}
+#viewport {
+	width: 20em;
+	height: 27.5em;
+	overflow: hidden;
+	margin: 5% auto;
+	position: relative;
+}
+#slide-container {
+	position: relative;
+	left: 0;
+	width: 70em;
+	-webkit-transition: left 0.5s;
+}
+article {
+	display: inline-block;
+	vertical-align: top;
+	float: left;
+	width: 20em;
+	height: 27.5em;
+	border: 1px solid #999;
+	border-radius: 3px;
+	overflow: hidden;
+	background: #eee;
+}
+h1 {
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	line-height: 1.3em;
+	text-align: center;
+	margin: 0 0 0.4em;
+}
+h1:before {
+	display: block;
+	padding: 0.5em 0 0.25em;
+	font-size: 2.2em;
+	color: #bada55;
+	text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.75);
+}
+header {
+	height: 3em;
+	background: #BADA55;
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+	text-align: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	padding: 0.5em 0;
+	margin: 0;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 2px 5px rgba(255, 255, 255, 0.25);
+}
+section {
+	height: 24.5em;
+	padding-top: 2.5%;
+}
+
+/* Screen Animations */
+
+#slide-container.login-screen {
+	left: 0;
+}
+#slide-container.options-screen {
+	left: -20em;
+}
+#slide-container.play-screen {
+	left: -40em;
+}
+
+/* Globals */
+
+a, label, input[type="button"] {
+	cursor: pointer;
+}
+a, input[type="button"] {
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5);
+	background-image: -webkit-linear-gradient(-15deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.025));
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+}
+a:hover, input[type="button"]:hover {
+	background-image: none;
+}
+.success {
+	background-color: #BADA55 !important;
+}
+
+/* Header Styling */
+
+header a, header h1 {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 1%;
+}
+header h1 {
+	font-size: 1.5em;
+}
+header a {
+	cursor: pointer;
+	position: relative;
+	width: 26%;
+	height: 2em;
+	border-radius: 5px;
+	padding: 0.3em 0 0.25em;
+}
+header a.back-button {
+	border-left: none;
+	width: 20%;
+	margin: 0 0 0 6%;
+	box-shadow: inset 0 2px 0 -1px rgba(255, 255, 255, 0.5);
+}
+header a.back-button:before {
+	position: absolute;
+	background-color: transparent;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	border-right: none;
+	border-top: none;
+	border-radius: 5px;
+	box-shadow: inset 2px 0 0 -1px rgba(255, 255, 255, 0.5);
+	top: 2px;
+	left: -0.55em;
+	padding-right: 0;
+	content: '';
+	height: 1.5em;
+	width: 1.5em;
+	-webkit-transform: rotate(45deg);
+}
+header a:before {
+	padding-right: 0.25em;
+}
+header h1 {
+	width: 37%;
+}
+header a.flash {
+	-webkit-animation: flash 0.5s;
+}
+
+@-webkit-keyframes flash {
+	from {background: white;}
+	to {background: transparent;}
+}
+
+/* Login Styling */
+
+section form {
+	margin: 0 5%;
+	padding: 5%;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5);
+	background-image: -webkit-linear-gradient(-15deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.025));
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	background: #f9f9f9;
+}
+label {
+	display: block;
+	font-weight: 700;
+}
+input[type="text"], input[type="password"], input[type="button"] {
+	font-size: medium;
+}
+input[type="text"], input[type="password"] {
+	display: block;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	width: 100%;
+	border-radius: 3px;
+	margin: 0;
+	margin-bottom: 1em;
+	font-family: "Asap", sans-serif;
+	font-style: italic;
+	font-weight: 700;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	padding: 0 0.5em;
+	color: #999;
+	box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+input[type="button"] {
+	font-family: "Asap", sans-serif;
+	padding: 0.5em 0;
+	font-weight: 700;
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	background-color: #eee;
+	margin: 0 0 1em;
+}
+
+/* Options Styling */
+
+#options ul, #options a {
+	margin: 5%;
+}
+#options ul {
+	height: 60%;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5);
+	background-image: -webkit-linear-gradient(-15deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.025));
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	background: #f9f9f9;
+}
+#options li, #options a {
+	padding: 10.5% 5%;
+}
+#options li:first-child {
+	border-radius: 5px 5px 0 0
+}
+#options li:after, #options a:after {
+	font-family: 'IcoMoon';
+	content: '2';
+	float: right;
+	opacity: 0.25;
+}
+#options li {
+	cursor: pointer;
+	border-bottom: 1px solid #ddd;
+	height: 33%;
+	box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5);
+	background-image: -webkit-linear-gradient(-15deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.025));
+	box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 1);
+}
+#options li:hover {
+	background-image: none;
+}
+#options li:last-child {
+	border-bottom: none;
+}
+#options a {
+	padding: 8% 5%;
+	display: block;
+	font-weight: 700;
+}
+#options li span {
+	display: inline-block;
+	vertical-align: top;
+	width: 40%;
+}
+#options li span {
+	font-weight: 700;
+}
+
+/* Card Game Styling */
+
+#card-table ul {
+	text-align: center;
+}
+#card-table > ul > li {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	height: 5.9em;
+	width: 4.75em;
+}
+.card-container {
+	-webkit-perspective: 250;
+	z-index: 1;
+}
+.card-container .card {
+	width: 90%;
+	height: 90%;
+	margin: 5% auto;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: 0.5s;
+}
+.card-container.flip .card {
+	-webkit-transform: rotateY(180deg);
+}
+.card .face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	border-radius: 3px;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	border-top: none;
+	border-left: none;
+	box-shadow: none;
+	-webkit-backface-visibility: hidden;
+}
+.card .face a {
+	border-radius: 2px;
+	display: block;
+	height: 92%;
+	width: 88%;
+	font-size: 2.5em;
+	margin: 4.5% 0 0 6%;
+	padding-top: 40%;
+	box-shadow: none;
+}
+.card .front-style {
+	border: 1px solid rgba(119, 160, 215, 0.9);
+	color: rgba(119, 160, 215, 0.75);
+}
+.card .back {
+	-webkit-transform: rotateY(180deg);
+}
+.card .back-style {
+	border: 1px solid rgba(232, 174, 90, 0.9);
+	color: rgba(232, 174, 90, 0.75);
+}
+.clear {
+	visibility: hidden;
+}
